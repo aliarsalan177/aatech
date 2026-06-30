@@ -21,6 +21,27 @@ Upload the contents of `out/` to your web host (shared hosting / cPanel,
 Netlify, Vercel, GitHub Pages, etc.). For Vercel, just import the repo —
 no extra config needed.
 
+## Automatic deploy to GitHub Pages
+
+Every push to `main` builds the site and publishes it to GitHub Pages via
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). One-time setup:
+
+1. **Enable Pages**: GitHub repo → **Settings → Pages → Build and deployment →
+   Source = "GitHub Actions"**.
+2. **Push to `main`** (or run the workflow manually from the **Actions** tab).
+   The site deploys automatically; the live URL appears in the Actions run.
+3. **Custom domain (`aatech.pk`)** — already handled by [`public/CNAME`](public/CNAME).
+   At your domain registrar add DNS records pointing to GitHub Pages:
+   - Four `A` records for the apex `aatech.pk` →
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - One `CNAME` record for `www` → `aliarsalan177.github.io`
+   Then in **Settings → Pages** confirm the custom domain is `aatech.pk` and
+   tick **Enforce HTTPS** (available once DNS propagates).
+
+> If you ever deploy to a project path instead of a custom domain
+> (e.g. `username.github.io/aatech`), set `basePath: "/aatech"` in
+> `next.config.mjs`. With the `aatech.pk` custom domain you do **not** need it.
+
 ## Add your logo
 
 1. Drop your logo file into `public/` named `logo.svg` (or `logo.png`).

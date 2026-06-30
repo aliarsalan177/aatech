@@ -3,22 +3,47 @@ import { Motion } from "./components/Motion";
 
 const NAV = [
   { href: "#services", label: "Services" },
+  { href: "#reporting", label: "Reporting" },
   { href: "#why", label: "Why AATech" },
   { href: "#process", label: "Process" },
-  { href: "#tech", label: "Stack" },
   { href: "#contact", label: "Contact" },
 ];
 
 const SERVICES = [
   {
-    icon: "M3 3h7v7H3V3Zm11 0h7v7h-7V3ZM3 14h7v7H3v-7Zm11 0h7v7h-7v-7Z",
-    title: "Custom Software",
-    desc: "Tailored platforms, SaaS products and internal tools built around your exact workflow — not an off-the-shelf compromise.",
+    icon: "M12 2a4 4 0 0 1 4 4 4 4 0 0 1 0 8 4 4 0 0 1-8 0 4 4 0 0 1 0-8 4 4 0 0 1 4-4Zm0 6v4m-6 2h12M4 9h2m12 0h2M4 15h2m12 0h2",
+    title: "AI-Powered Development",
+    desc: "We build AI into your products — LLM & Claude integrations, smart chatbots, recommendation engines, document automation and predictive features that give you an edge.",
+  },
+  {
+    icon: "M3 3h2l1 12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-1.8L21 7H6m3 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
+    title: "E-commerce Solutions",
+    desc: "8+ years building and scaling online stores end to end — Magento, Shopify, WooCommerce and custom platforms, from catalog and checkout to fulfilment.",
+  },
+  {
+    icon: "M12 3v3m0 12v3m9-9h-3M6 12H3m13.5-6.5-2 2m-7 7-2 2m0-11 2 2m7 7 2 2M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z",
+    title: "Business Automation",
+    desc: "Replace repetitive manual work with automated workflows, bots and pipelines that connect your tools and run 24/7 — fewer errors, lower cost, more speed.",
+  },
+  {
+    icon: "M6 3v6a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3v6M6 6h.01M18 18h.01M4 3h4v4H4V3Zm12 14h4v4h-4v-4Z",
+    title: "Systems Integration",
+    desc: "Connect ERPs, CRMs, POS, payment gateways, marketplaces and APIs into one seamless, reliable flow of data across your whole business.",
+  },
+  {
+    icon: "M3 3v18h18M7 14l4-4 3 3 5-6m0 0h-4m4 0v4",
+    title: "Data, Reporting & BI",
+    desc: "Real-time dashboards, automated reports and live KPIs that turn raw numbers into decisions you can act on — delivered to inbox, screen or mobile.",
+  },
+  {
+    icon: "M5 7c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3Zm0 0v10c0 1.7 3.1 3 7 3s7-1.3 7-3V7M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3",
+    title: "Big Data & Analytics",
+    desc: "Pipelines that ingest, clean and analyse millions of records to surface trends, forecasts and opportunities hiding in your data.",
   },
   {
     icon: "M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm0 14h18M9 21h6",
-    title: "Web Development",
-    desc: "Fast, accessible, SEO-ready websites and web apps using React, Next.js and modern, maintainable architecture.",
+    title: "Custom Software & Web",
+    desc: "Tailored web platforms and SaaS products built with React, Next.js and clean, maintainable architecture — designed to scale from day one.",
   },
   {
     icon: "M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm4 18h2",
@@ -28,58 +53,78 @@ const SERVICES = [
   {
     icon: "M12 3a8 8 0 0 0-8 8c0 3 2 5 4 6h8c2-1 4-3 4-6a8 8 0 0 0-8-8Zm-4 17h8",
     title: "Cloud & DevOps",
-    desc: "Scalable infrastructure on AWS, Azure and GCP with CI/CD pipelines, containers and 24/7 monitoring.",
-  },
-  {
-    icon: "M12 2 2 7l10 5 10-5-10-5Zm-8 9 8 4 8-4M4 16l8 4 8-4",
-    title: "UI/UX Design",
-    desc: "Research-driven interface design and prototyping that turns complex ideas into clear, delightful experiences.",
-  },
-  {
-    icon: "M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
-    title: "IT Consulting",
-    desc: "Strategy, technical audits and digital transformation guidance to modernise systems and reduce cost.",
+    desc: "Scalable infrastructure on AWS, Azure and GCP with CI/CD pipelines, containers and 24/7 monitoring that keeps everything running.",
   },
 ];
 
 const STATS = [
-  { count: 50, suffix: "+", value: "50+", label: "Projects delivered" },
-  { count: 30, suffix: "+", value: "30+", label: "Happy clients" },
-  { count: 8, suffix: "+", value: "8+", label: "Years of experience" },
-  { count: null, suffix: "", value: "24/7", label: "Support & monitoring" },
+  { count: 8, suffix: "+", value: "8+", label: "Years in e-commerce" },
+  { count: 120, suffix: "+", value: "120+", label: "Projects delivered" },
+  { count: 40, suffix: "+", value: "40+", label: "Clients, local & global" },
+  { count: null, suffix: "", value: "24/7", label: "Support & automation" },
 ];
 
 const WHY = [
   {
-    title: "Senior engineers, no juniors hidden in the bill",
-    desc: "You work directly with experienced developers who own the outcome end to end.",
+    title: "8+ years of e-commerce expertise",
+    desc: "End-to-end online retail — development, integration, automation, reporting and big data — for stores of every size.",
   },
   {
-    title: "Fixed scope, transparent pricing",
-    desc: "Clear milestones and no surprise invoices — you always know what you're paying for.",
+    title: "AI & automation at the core",
+    desc: "We bake AI and automated workflows into everything we build, so your systems work smarter and run themselves.",
   },
   {
-    title: "Built to scale from day one",
-    desc: "Clean architecture and automated testing so your product grows without rewrites.",
+    title: "Local in Pakistan, delivering worldwide",
+    desc: "We work with clients both locally and internationally, across time zones, with clear and reliable communication.",
   },
   {
-    title: "On-time, every time",
-    desc: "Agile sprints with weekly demos keep delivery predictable and you always in the loop.",
+    title: "Senior engineers who own the outcome",
+    desc: "You work directly with experienced developers — no juniors hidden in the bill — invested in your results.",
+  },
+  {
+    title: "Expertise to handle any challenge",
+    desc: "From a single integration to a full platform rebuild, we have the depth to solve every kind of technical problem.",
+  },
+  {
+    title: "Transparent, on-time delivery",
+    desc: "Fixed scope, clear milestones and weekly demos keep delivery predictable and you always in the loop.",
   },
 ];
 
 const PROCESS = [
-  { step: "01", title: "Discover", desc: "We dig into your goals, users and constraints to define what success looks like." },
-  { step: "02", title: "Design", desc: "Wireframes, prototypes and architecture you can review before a line of code is written." },
-  { step: "03", title: "Build", desc: "Agile development with weekly demos, clean code and continuous integration." },
-  { step: "04", title: "Launch & Support", desc: "Smooth deployment, monitoring and ongoing maintenance so you can rest easy." },
+  { step: "01", title: "Discover", desc: "We dig into your goals, data and workflows to define what success looks like and where AI and automation can win." },
+  { step: "02", title: "Design", desc: "Architecture, prototypes and a clear automation & integration plan you review before a line of code is written." },
+  { step: "03", title: "Build & Automate", desc: "AI-assisted development, system integrations and automated pipelines, shipped in agile sprints with weekly demos." },
+  { step: "04", title: "Launch, Report & Optimise", desc: "Smooth deployment plus live dashboards, monitoring and continuous improvement so results keep compounding." },
 ];
 
 const TECH = [
-  "React", "Next.js", "Node.js", "TypeScript", "Python", "Django",
-  "Flutter", "React Native", "PostgreSQL", "MongoDB", "AWS", "Docker",
-  "Kubernetes", "GraphQL", "Laravel", ".NET",
+  "AI / LLMs", "Claude API", "OpenAI", "LangChain", "Python", "TensorFlow",
+  "React", "Next.js", "Node.js", "TypeScript", "Laravel", ".NET",
+  "Flutter", "React Native", "Magento", "Shopify", "WooCommerce",
+  "PostgreSQL", "MongoDB", "BigQuery", "Power BI", "Apache Kafka",
+  "AWS", "Docker", "Kubernetes", "n8n / Zapier",
 ];
+
+// Animated reporting/dashboard showcase data
+const REPORTS = [
+  "Real-time sales & revenue dashboards",
+  "Inventory, stock & supply-chain reports",
+  "Customer, cohort & retention analytics",
+  "Marketing & campaign ROI tracking",
+  "Automated daily / weekly email reports",
+  "Big-data pipelines over millions of records",
+];
+
+const KPIS = [
+  { prefix: "$", count: 284, suffix: "K", label: "Revenue (30d)", trend: "+18%" },
+  { prefix: "", count: 8640, suffix: "", label: "Orders", trend: "+12%" },
+  { prefix: "", count: 4.8, suffix: "%", decimals: 1, label: "Conversion", trend: "+0.6" },
+  { prefix: "+", count: 37, suffix: "%", label: "YoY growth", trend: "▲" },
+];
+
+// Monthly revenue trend (relative heights, %)
+const CHART = [40, 52, 48, 63, 58, 72, 80, 76, 92, 88, 100, 95];
 
 const EMAIL = "info@aatech.pk";
 const PHONE_DISPLAY = "+92 303 2455033";
@@ -122,16 +167,18 @@ export default function Home() {
           </div>
           <div className="container hero__inner">
             <p className="eyebrow reveal">
-              <span className="ping" aria-hidden="true" /> IT &amp; Software Solutions
+              <span className="ping" aria-hidden="true" /> AI-Powered Software, E-commerce &amp; Automation
             </p>
             <h1 className="hero__title reveal" style={{ transitionDelay: "80ms" }}>
-              We build software that{" "}
+              We build AI-powered software that{" "}
               <span className="grad">moves your business forward</span>
             </h1>
             <p className="hero__sub reveal" style={{ transitionDelay: "160ms" }}>
-              AATech is a Pakistan-based software house crafting custom web
-              platforms, mobile apps and cloud solutions for startups and
-              enterprises worldwide. From idea to launch — engineered to last.
+              AATech is a software house with 8+ years building end-to-end
+              e-commerce and custom platforms — development, integration,
+              automation, reporting and big data, supercharged with AI. We
+              serve clients locally in Pakistan and internationally, with the
+              expertise to solve every kind of technical problem.
             </p>
             <div className="hero__actions reveal" style={{ transitionDelay: "240ms" }}>
               <a href="#contact" className="btn btn--primary btn--shine">
@@ -187,8 +234,87 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ---------- Reporting & Analytics showcase ---------- */}
+        <section className="section section--alt" id="reporting">
+          <div className="container">
+            <div className="section__head reveal">
+              <p className="eyebrow">Data, reporting &amp; big data</p>
+              <h2 className="section__title">Reporting that turns data into decisions</h2>
+              <p className="section__lead">
+                From real-time dashboards to automated reports and big-data
+                pipelines — we make your numbers work for you.
+              </p>
+            </div>
+            <div className="report">
+              <div className="report__intro reveal">
+                <h3 className="report__title">Example reports we build</h3>
+                <ul className="report__list">
+                  {REPORTS.map((r) => (
+                    <li key={r} className="report__item">
+                      <span className="report__check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="m5 13 4 4L19 7" />
+                        </svg>
+                      </span>
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#contact" className="btn btn--primary btn--shine">
+                  Get your dashboard
+                </a>
+              </div>
+
+              {/* Animated mock dashboard */}
+              <div className="dash reveal" role="img" aria-label="Example analytics dashboard">
+                <div className="dash__bar" aria-hidden="true">
+                  <span className="dash__dot" />
+                  <span className="dash__dot" />
+                  <span className="dash__dot" />
+                  <span className="dash__name">AATech Analytics</span>
+                  <span className="dash__live">● Live</span>
+                </div>
+                <div className="dash__kpis">
+                  {KPIS.map((k) => (
+                    <div key={k.label} className="kpi">
+                      <span
+                        className="kpi__value"
+                        data-count={k.count}
+                        data-prefix={k.prefix}
+                        data-suffix={k.suffix}
+                        data-decimals={k.decimals ?? 0}
+                      >
+                        {k.prefix}
+                        {k.count}
+                        {k.suffix}
+                      </span>
+                      <span className="kpi__label">{k.label}</span>
+                      <span className="kpi__trend">{k.trend}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="chart" aria-hidden="true">
+                  <div className="chart__head">
+                    <span>Revenue — last 12 months</span>
+                    <span className="chart__up">▲ growing</span>
+                  </div>
+                  <div className="chart__bars">
+                    {CHART.map((h, i) => (
+                      <span
+                        key={i}
+                        className="chart__bar"
+                        style={{ height: `${h}%`, transitionDelay: `${i * 60}ms` }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ---------- Why AATech ---------- */}
-        <section className="section section--alt" id="why">
+        <section className="section" id="why">
           <div className="container why">
             <div className="why__intro reveal">
               <p className="eyebrow">Why AATech</p>
@@ -224,7 +350,7 @@ export default function Home() {
         </section>
 
         {/* ---------- Process ---------- */}
-        <section className="section" id="process">
+        <section className="section section--alt" id="process">
           <div className="container">
             <div className="section__head reveal">
               <p className="eyebrow">How we work</p>
@@ -247,7 +373,7 @@ export default function Home() {
         </section>
 
         {/* ---------- Tech stack ---------- */}
-        <section className="section section--alt" id="tech">
+        <section className="section" id="tech">
           <div className="container">
             <div className="section__head reveal">
               <p className="eyebrow">Our toolbox</p>
