@@ -18,7 +18,7 @@ const SERVICES = [
   {
     icon: "M3 3h2l1 12a2 2 0 0 0 2 2h9a2 2 0 0 0 2-1.8L21 7H6m3 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
     title: "E-commerce Solutions",
-    desc: "8+ years building and scaling online stores end to end — Magento, Shopify, WooCommerce and custom platforms, from catalog and checkout to fulfilment.",
+    desc: "Experts across every major e-commerce platform — Shopify, Magento, WooCommerce, BigCommerce and custom builds — with 10+ years scaling stores end to end, from catalog and checkout to fulfilment.",
   },
   {
     icon: "M12 3v3m0 12v3m9-9h-3M6 12H3m13.5-6.5-2 2m-7 7-2 2m0-11 2 2m7 7 2 2M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z",
@@ -58,7 +58,7 @@ const SERVICES = [
 ];
 
 const STATS = [
-  { count: 8, suffix: "+", value: "8+", label: "Years in e-commerce" },
+  { count: 10, suffix: "+", value: "10+", label: "Years of experience" },
   { count: 120, suffix: "+", value: "120+", label: "Projects delivered" },
   { count: 40, suffix: "+", value: "40+", label: "Clients, local & global" },
   { count: null, suffix: "", value: "24/7", label: "Support & automation" },
@@ -66,8 +66,8 @@ const STATS = [
 
 const WHY = [
   {
-    title: "8+ years of e-commerce expertise",
-    desc: "End-to-end online retail — development, integration, automation, reporting and big data — for stores of every size.",
+    title: "10+ years of e-commerce expertise",
+    desc: "Experts in every major platform — Shopify, Magento, WooCommerce, BigCommerce — with end-to-end retail: development, integration, automation, reporting and big data.",
   },
   {
     title: "AI & automation at the core",
@@ -171,7 +171,7 @@ export default function Home() {
               <span className="grad">moves your business forward</span>
             </h1>
             <p className="hero__sub reveal" style={{ transitionDelay: "160ms" }}>
-              AATech is a global software house with 8+ years building
+              AATech is a global software house with 10+ years building
               end-to-end e-commerce and custom platforms — development,
               integration, automation, reporting and big data, supercharged
               with AI. We partner with clients worldwide, with the expertise to
