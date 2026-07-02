@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "AATech" }],
   alternates: { canonical: SITE_URL },
+  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     url: SITE_URL,
